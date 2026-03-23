@@ -1,0 +1,18 @@
+# API keys
+.env
+
+# .NET build output
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# macOS
+.DS_Store
+
+# Results (regenerated on each run)
+bluematrix-result.json
