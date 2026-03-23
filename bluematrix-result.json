@@ -1,0 +1,82 @@
+[
+  {
+    "field": "Analyst Certification",
+    "value": "I BlueMatrix Support am certifing this...test: BlueMatrix Support",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Analyst Email",
+    "value": "system\u002Bdemo@bluematrix.com",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Analyst Name",
+    "value": "BlueMatrix Support",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Analyst Owns Securities",
+    "value": "yes",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Company Name",
+    "value": "Vectren Corporation",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Dividend Yield",
+    "value": "7%",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Firm Address",
+    "value": "1 Main Street, New York, NY",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Firm Name",
+    "value": "BlueMatrix Support",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Firm Phone",
+    "value": "212-111-1111",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Important Disclosures",
+    "value": "BM test automation, please ignore: CxaQpftMtJ2321914284 edited VbZXSnzOSk",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Other Disclosures",
+    "value": "Not provided",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Ratings Definitions",
+    "value": "Not provided in document",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Report Date",
+    "value": "August 18, 2022",
+    "validation": "Valid"
+  },
+  {
+    "field": "Required Disclosures",
+    "value": "REQUIRED DISCLOSURES BM test automation, please ignore: CxaQpftMtJ2321914284 edited VbZXSnzOSk BMDisclaimerdpomH (dpomH) BMDisclaimeruTLeu (uTLeu) BMDisclaimerwqple (wqple)",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Stock Exchange",
+    "value": "NYSE",
+    "validation": "Undefined"
+  },
+  {
+    "field": "Ticker Symbol",
+    "value": "WVE",
+    "validation": "Undefined"
+  }
+]
