@@ -20,23 +20,49 @@ You need two things before running this sample:
 
 ### 1. .NET 8 SDK
 
-**macOS (Homebrew):**
-```bash
-brew install dotnet@8
-```
+Pick the instructions for your operating system:
 
-After installing, add this to your shell profile (`~/.zprofile` or `~/.bash_profile`):
-```bash
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet@8/libexec"
-export PATH="$DOTNET_ROOT:$PATH"
-```
+<details>
+<summary><strong>Windows</strong></summary>
 
-Then restart your terminal or run `source ~/.zprofile`.
+1. Download the .NET 8 SDK installer from https://dotnet.microsoft.com/download/dotnet/8.0
+2. Run the installer and follow the prompts (the defaults are fine)
+3. Open a **new** Command Prompt or PowerShell window after installing
 
-**Windows:**
-Download from https://dotnet.microsoft.com/download/dotnet/8.0
+</details>
 
-**Verify it works:**
+<details>
+<summary><strong>macOS (Homebrew)</strong></summary>
+
+1. Open Terminal and run:
+   ```bash
+   brew install dotnet@8
+   ```
+2. Add this to your shell profile (`~/.zprofile` or `~/.bash_profile`):
+   ```bash
+   export DOTNET_ROOT="/opt/homebrew/opt/dotnet@8/libexec"
+   export PATH="$DOTNET_ROOT:$PATH"
+   ```
+3. Restart your terminal or run `source ~/.zprofile`
+
+</details>
+
+<details>
+<summary><strong>macOS (manual installer)</strong></summary>
+
+1. Download the .NET 8 SDK installer from https://dotnet.microsoft.com/download/dotnet/8.0
+2. Open the `.pkg` file and follow the prompts
+
+</details>
+
+<details>
+<summary><strong>Linux</strong></summary>
+
+Follow the instructions for your distribution at https://learn.microsoft.com/en-us/dotnet/core/install/linux
+
+</details>
+
+**Verify it works** (all platforms):
 ```bash
 dotnet --version
 ```
@@ -62,12 +88,25 @@ cd blue-matrix-aidp
 
 ### Step 2: Create your `.env` file
 
+**macOS / Linux:**
 ```bash
 cd BlueMatrixSample
 cp .env.example .env
 ```
 
-Open `.env` in any text editor and paste in your keys:
+**Windows (Command Prompt):**
+```cmd
+cd BlueMatrixSample
+copy .env.example .env
+```
+
+**Windows (PowerShell):**
+```powershell
+cd BlueMatrixSample
+Copy-Item .env.example .env
+```
+
+Open `.env` in any text editor (Notepad, VS Code, etc.) and paste in your keys:
 
 ```
 GDPICTURE_KEY=your-gdpicture-key-here
@@ -144,7 +183,8 @@ blue-matrix-aidp/
 
 | Problem | Solution |
 |---------|----------|
-| `dotnet: command not found` | Install .NET 8 SDK (see Prerequisites above) |
+| `dotnet: command not found` (macOS/Linux) | Install .NET 8 SDK (see Prerequisites above) |
+| `'dotnet' is not recognized` (Windows) | Install .NET 8 SDK, then open a **new** Command Prompt or PowerShell window |
 | `Set OPENAI_API_KEY in the .env file` | Create a `.env` file with your OpenAI key (see Setup) |
 | `HTTP 429 (insufficient_quota)` | Your OpenAI account needs credits — add billing at https://platform.openai.com/settings/organization/billing |
 | `Unable to locate the latin dictionary` | Run `dotnet restore` to download the resource packages |
